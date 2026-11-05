@@ -2,7 +2,7 @@ name: Deploy Hugo site to GitHub Pages
 
 on:
   push:
-    branches: [main, develop]
+    branches: [develop]  # GitHub Pagesは確認環境(develop専用)。mainは将来Cloudflareで公開
   workflow_dispatch:
 
 permissions:
@@ -16,6 +16,8 @@ concurrency:
 
 jobs:
   build:
+    # 手動実行(workflow_dispatch)でも develop 以外からはデプロイしない
+    if: github.ref == 'refs/heads/develop'
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.169.0

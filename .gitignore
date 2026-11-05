@@ -1,0 +1,4 @@
+# Hugoのビルド結果(GitHub Actions / Cloudflare側でビルドするため管理しない)
+/public/
+/resources/_gen/
+.hugo_build.lock
