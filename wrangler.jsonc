@@ -9,6 +9,6 @@
   },
   // workers.dev のURL(Production)で公開する
   "workers_dev": true,
-  // バージョンごとの確認用URL(Preview)は作らない
-  "preview_urls": false
+  // develop などmain以外のブランチ用の確認URL(Preview)を発行する
+  "preview_urls": true
 }
