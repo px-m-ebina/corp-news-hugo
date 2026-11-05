@@ -1,0 +1,10 @@
+{
+  // Workerの名前。Cloudflareの画面の「Project name」と一致させる
+  "name": "corp-news-hugo",
+  // Cloudflareの実行環境のバージョン指定
+  "compatibility_date": "2026-10-01",
+  // 公開する静的ファイルのフォルダ(Hugoの出力先)
+  "assets": {
+    "directory": "./public"
+  }
+}
