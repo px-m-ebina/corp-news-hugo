@@ -1,0 +1,14 @@
+baseURL = 'https://www.example.co.jp/'
+locale = 'ja-jp'
+title = '株式会社サンプル'
+timeZone = 'Asia/Tokyo'
+
+# トップページなどは既存HTML(static/)を使うので、Hugoでは生成しない
+disableKinds = ['home', 'taxonomy', 'term']
+
+[pagination]
+  pagerSize = 10
+
+# News一覧で HTML・RSS・JSON(トップページ用) を出力
+[outputs]
+  section = ['html', 'rss', 'json']

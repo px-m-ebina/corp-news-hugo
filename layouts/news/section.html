@@ -1,0 +1,20 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ $paginator := .Paginate .Pages.ByDate.Reverse }}
+<ul class="news-list">
+  {{ range $paginator.Pages }}
+  <li>
+    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006.01.02" }}</time>
+    <span class="category">{{ .Params.category }}</span>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  </li>
+  {{ end }}
+</ul>
+{{ if gt $paginator.TotalPages 1 }}
+<nav class="pager">
+  {{ with $paginator.Prev }}<a href="{{ .URL }}">&laquo; 前へ</a>{{ end }}
+  <span>{{ $paginator.PageNumber }} / {{ $paginator.TotalPages }}</span>
+  {{ with $paginator.Next }}<a href="{{ .URL }}">次へ &raquo;</a>{{ end }}
+</nav>
+{{ end }}
+{{ end }}

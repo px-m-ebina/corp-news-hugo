@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>ニュース on 株式会社サンプル</title>
+		<link>http://localhost:1313/news/</link>
+		<description>Recent content in ニュース on 株式会社サンプル</description>
+		<generator>Hugo</generator>
+		<language>ja-jp</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 01 Nov 2026 10:00:00 +0900</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/news/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>本社移転のお知らせ</title>
+				<link>http://localhost:1313/news/2026-11-01-new-office/</link>
+				<pubDate>Sun, 01 Nov 2026 10:00:00 +0900</pubDate>
+				<guid>http://localhost:1313/news/2026-11-01-new-office/</guid>
+				<description>&lt;p&gt;平素より格別のご高配を賜り、誠にありがとうございます。&lt;/p&gt;&#xA;&lt;p&gt;このたび、業務拡大に伴い本社を下記へ移転いたします。&lt;/p&gt;&#xA;&lt;h2 id=&#34;新住所&#34;&gt;新住所&lt;/h2&gt;&#xA;&lt;p&gt;東京都千代田区丸の内1-1-1 サンプルビル10F&lt;/p&gt;&#xA;&lt;h2 id=&#34;業務開始日&#34;&gt;業務開始日&lt;/h2&gt;&#xA;&lt;p&gt;2026年12月1日(火)&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>新サービス「サンプルクラウド」提供開始</title>
+				<link>http://localhost:1313/news/2026-10-15-new-service/</link>
+				<pubDate>Thu, 15 Oct 2026 09:00:00 +0900</pubDate>
+				<guid>http://localhost:1313/news/2026-10-15-new-service/</guid>
+				<description>&lt;p&gt;本日より、中小企業向けクラウドサービス「サンプルクラウド」の提供を開始しました。&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

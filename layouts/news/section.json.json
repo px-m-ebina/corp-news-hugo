@@ -1,0 +1,9 @@
+{{- $items := slice -}}
+{{- range first 5 .Pages.ByDate.Reverse -}}
+  {{- $items = $items | append (dict
+      "title" .Title
+      "date" (.Date.Format "2006.01.02")
+      "category" .Params.category
+      "url" .RelPermalink) -}}
+{{- end -}}
+{{- $items | jsonify -}}

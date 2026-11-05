@@ -1,0 +1,9 @@
+{{ define "main" }}
+<article class="news-article">
+  <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006.01.02" }}</time>
+  <span class="category">{{ .Params.category }}</span>
+  <h1>{{ .Title }}</h1>
+  <div class="body">{{ .Content }}</div>
+  <p><a href="{{ "news/" | relURL }}">&laquo; ニュース一覧へ戻る</a></p>
+</article>
+{{ end }}
