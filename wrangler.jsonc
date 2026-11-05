@@ -6,5 +6,9 @@
   // 公開する静的ファイルのフォルダ(Hugoの出力先)
   "assets": {
     "directory": "./public"
-  }
+  },
+  // workers.dev のURL(Production)で公開する
+  "workers_dev": true,
+  // バージョンごとの確認用URL(Preview)は作らない
+  "preview_urls": false
 }
